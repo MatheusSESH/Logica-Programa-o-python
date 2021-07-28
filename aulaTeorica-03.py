@@ -15,3 +15,15 @@ if(v1%2 == 0):
 else:
   print("O valor é impar")
 
+# Expressões logicas
+
+n1 = float(input("Digite a primeira nota: "))
+n2 = float(input("Digite a segunda nota: "))
+n3 = float(input("Digite a terceira nota: "))
+
+result = (n1 >= 7) and (n2 >= 7) and (n3 >= 7)
+
+if(result):
+  print("Aprovado!")
+else: 
+  print("Reprovado")
