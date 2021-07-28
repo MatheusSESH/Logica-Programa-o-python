@@ -51,3 +51,38 @@ else:
       print("O valor total é {} ".format(total))
     else:
       print("Produto inexistente!")
+
+# Condicionais (ELIF)
+
+print("1 - Maça")
+print("2 - Laranja")
+print("3 - Banana")
+print(" ")
+
+product = int(input("O que deseja comprar? "))
+quant = int(input("Quantas unidades? "))
+
+if(product == 1): 
+  total = quant * 2.30
+  print("O valor total é {} ".format(total))
+elif(product == 2):
+  total = quant * 3.60
+  print("O valor total é {} ".format(total))
+elif(product == 3):
+  total = quant * 1.85
+  print("O valor total é {} ".format(total))
+else:
+  print("Produto inexistente!")
+
+###
+
+name = input("Digite seu nome: ")
+age = int(input("Digite sua idade: "))
+
+if(name == "Matheus"):
+  print("Olá, Matheus")
+elif(age <= 18):
+  print("Você não é Matheus ainda é menor de Idade")
+elif(age >= 100):
+  print("Diferente de você, Matheus não é imortal")
+
