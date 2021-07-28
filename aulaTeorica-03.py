@@ -27,3 +27,27 @@ if(result):
   print("Aprovado!")
 else: 
   print("Reprovado")
+
+# Condicionais aninhadas 
+
+print("1 - Maça")
+print("2 - Laranja")
+print("3 - Banana")
+print(" ")
+
+product = int(input("O que deseja comprar? "))
+quant = int(input("Quantas unidades? "))
+
+if(product == 1): 
+  total = quant * 2.30
+  print("O valor total é {} ".format(total))
+else: 
+  if(product == 2):
+    total = quant * 3.60
+    print("O valor total é {} ".format(total))
+  else:
+    if(product == 3):
+      total = quant * 1.85
+      print("O valor total é {} ".format(total))
+    else:
+      print("Produto inexistente!")
