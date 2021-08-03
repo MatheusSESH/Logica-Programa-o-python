@@ -62,65 +62,65 @@
 
 ## 1
 
-# l1 = int(input("Digite o valor do primeiro lado"))
-# l2 = int(input("Digite o valor do segundo lado"))
-# l3 = int(input("Digite o valor do terceiro lado"))
+l1 = int(input("Digite o valor do primeiro lado"))
+l2 = int(input("Digite o valor do segundo lado"))
+l3 = int(input("Digite o valor do terceiro lado"))
 
-# if(l1 and l2 and l3 > 0):
-#   if((l1 + l2 > l3) and (l1 + l3 > l2) and (l2 + l3 > l1)):
-#     if(l1 == l2 and l3):
-#       print("Equilatero")
-#     elif(l1 != l2 and l1 != l3 and l2 != l3):
-#       print("Escaleno")
-#     else:
-#       print("Triango Isóceles")
-#   else:
-#     print("Os valores n servem pra formar um triangulo")
-# else:
-#   print("Não podemos ter lados iguais a 0")
+if(l1 and l2 and l3 > 0):
+  if((l1 + l2 > l3) and (l1 + l3 > l2) and (l2 + l3 > l1)):
+    if(l1 == l2 and l3):
+      print("Equilatero")
+    elif(l1 != l2 and l1 != l3 and l2 != l3):
+      print("Escaleno")
+    else:
+      print("Triango Isóceles")
+  else:
+    print("Os valores n servem pra formar um triangulo")
+else:
+  print("Não podemos ter lados iguais a 0")
 
 ## 2
 
-# print("1 - Adição")
-# print("2 - Subtração")
-# print("3 - Multiplicação")
-# print("4 - Divisão")
+print("1 - Adição")
+print("2 - Subtração")
+print("3 - Multiplicação")
+print("4 - Divisão")
 
-# op = int(input("Qual operação deseja? "))
-# valor1 = int(input("Digite o primeiro valor: "))
-# valor2 = int(input("Digite o segundo valor: "))
+op = int(input("Qual operação deseja? "))
+valor1 = int(input("Digite o primeiro valor: "))
+valor2 = int(input("Digite o segundo valor: "))
 
-# if(op == 1):
-#   result = valor1 + valor2
-#   print("O resultado da soma é: {} ".format(result))
-# elif(op == 2):
-#   result = valor1 - valor2
-#   print("O resultado da subtração é: {} ".format(result))
-# elif(op == 3):
-#   result = valor1 * valor2
-#   print("O resultado da multiplicação é: {} ".format(result))
-# elif(op == 4):
-#   result = valor1 / valor2
-#   print("O resultado da divisão é: {} ".format(result))
-# else: ]
-#   print("Operação invalida")
+if(op == 1):
+  result = valor1 + valor2
+  print("O resultado da soma é: {} ".format(result))
+elif(op == 2):
+  result = valor1 - valor2
+  print("O resultado da subtração é: {} ".format(result))
+elif(op == 3):
+  result = valor1 * valor2
+  print("O resultado da multiplicação é: {} ".format(result))
+elif(op == 4):
+  result = valor1 / valor2
+  print("O resultado da divisão é: {} ".format(result))
+else:
+  print("Operação invalida")
 
 ## 3 
 
-kwh = int(input("Quantidade de kWh consumido: "))
+kwh = int(input("digite a quantidade de kWh"))
 print(" ")
 print("R - Residêncial")
 print("I - Insdustrial")
 print("C - Comercial")
 print(" ")
-type = input("Digite seu tipo de instalação: ")
+type = input("Digite seu tipo de instalação: ").upper()
 
 if(type == 'R' or type == 'I' or type == 'C'):
 
   if(type == 'R'):
     if(kwh <= 500):
       total = kwh * 0.40 
-      print("Preço total: {} ".format(total))
+      print("Preço total: {} " .format(total))
     else:
       total = kwh * 0.65
       print("Preço total: {} ".format(total))
@@ -142,3 +142,4 @@ if(type == 'R' or type == 'I' or type == 'C'):
       print("Preço total: {} ".format(total))
 else:
   print("Operação invalida")
+
