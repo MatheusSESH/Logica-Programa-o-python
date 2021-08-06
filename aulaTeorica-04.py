@@ -12,11 +12,11 @@
 
 # Estrutura de repetição aninhada
 
-xw = 1
-while( xw < 11 ):
-  xf = 0
-  for xf in range(1,11):
-    total = xw * xf
-    print("{} * {} = {}" .format(xw,xf,total))
-  print(" ")
-  xw += 1
+# xw = 1
+# while( xw < 11 ):
+#   xf = 0
+#   for xf in range(1,11):
+#     total = xw * xf
+#     print("{} * {} = {}" .format(xw,xf,total))
+#   print(" ")
+#   xw += 1
